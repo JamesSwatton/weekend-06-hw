@@ -4,19 +4,19 @@
     <meta charset="utf-8">
     <title>Games List App</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
-    <script type="js/app.js"></script>
+    <script src="js/app.js"></script>
   </head>
   <body>
     <form id="new-item-form">
       <div id="form-wrapper">
 
         <div class="form-item">
-          <label for="title">Title</label>
+          <label for="title" class="primary">Title</label>
           <input type="text" id="title" required>
         </div>
 
         <div class="form-item">
-          <label for="genre">Genre</label>
+          <label for="genre" class="primary">Genre</label>
           <select id="genre">
             <option value="" disabled selected></option>
             <option value="Platformer">Platformer</option>
@@ -32,9 +32,10 @@
         </div>
 
         <div class="form-item">
-          <label for="system">System</label>
+          <label for="system" class="primary">System</label>
           <select id="system">
             <option value="" disabled selected></option>
+            <option value="PC">PC</option>
             <option value="NES">NES</option>
             <option value="SNES">SNES</option>
             <option value="N64">N64</option>
@@ -55,7 +56,7 @@
       </div>
 
       <input type="submit" value="Save">
-      
+
     </form>
 
     <button id="delete-all">Delete All</button>
