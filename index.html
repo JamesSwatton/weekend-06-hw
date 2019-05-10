@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Games List App</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <script type="js/app.js"></script>
+  </head>
+  <body>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+
+        <div class="form-item">
+          <label for="title">Title</label>
+          <input type="text" id="title" required>
+        </div>
+
+        <div class="form-item">
+          <label for="genre">Genre</label>
+          <select id="genre">
+            <option value="" disabled selected></option>
+            <option value="Platformer">Platformer</option>
+            <option value="Action-adventure">Action-adventure</option>
+            <option value="RPG">RPG</option>
+            <option value="Simulation">Simulation</option>
+            <option value="Strategy">Strategy</option>
+            <option value="Puzzle">Puzzle</option>
+            <option value="Shooter">Shooter</option>
+            <option value="Sports">Sports</option>
+            <option value="Racing">Racing</option>
+          </select>
+        </div>
+
+        <div class="form-item">
+          <label for="system">System</label>
+          <select id="system">
+            <option value="" disabled selected></option>
+            <option value="NES">NES</option>
+            <option value="SNES">SNES</option>
+            <option value="N64">N64</option>
+            <option value="GameCube">GameCube</option>
+            <option value="Wii">Wii</option>
+            <option value="MegaDrive">MegaDrive</option>
+            <option value="Master System">Master System</option>
+            <option value="Saturn">Saturn</option>
+            <option value="Dreamcast">Dreamcast</option>
+            <option value="PlayStation">PlayStation</option>
+            <option value="PlayStation 2">PlayStation 2</option>
+            <option value="PlayStation 3">PlayStation 3</option>
+            <option value="PlayStation 4">PlayStation 4</option>
+            <option value="XBox">XBox</option>
+            <option value="XBox 360">XBox 360</option>
+          </select>
+        </div>
+      </div>
+
+      <input type="submit" value="Save">
+      
+    </form>
+
+    <button id="delete-all">Delete All</button>
+
+    <h1>Game List</h1>
+
+    <ul id="game-list">
+
+    </ul>
+  </body>
+</html>
