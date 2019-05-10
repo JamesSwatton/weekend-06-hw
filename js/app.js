@@ -2,6 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const newItemForm = document.querySelector('#new-item-form');
   newItemForm.addEventListener('submit', handleNewItemFormSubmit);
 
+  const deleteAllButton = document.querySelector('#delete-all');
+  deleteAllButton.addEventListener('click', handleDeleteAllClick);
+
   console.log('JavaScript loaded');
 })
 
@@ -31,4 +34,9 @@ const createGameListItem = function(form) {
   gameListItem.appendChild(system);
 
   return gameListItem;
+}
+
+const handleDeleteAllClick = function(event) {
+  const gameList = document.querySelector('#game-list');
+  gameList.innerHTML = '';
 }
