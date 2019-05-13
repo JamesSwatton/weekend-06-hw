@@ -21,17 +21,27 @@ const handleNewItemFormSubmit = function(event) {
 const createGameListItem = function(form) {
   const gameListItem = document.createElement('li')
 
+  const logo = document.createElement('img');
+
+  if (form.system.value === 'SNES') {
+    logo.src = "css/systems_logos/SNES.svg.png";
+  } else if (form.system.value === 'NES') {
+    logo.src = "css/systems_logos/NES.svg.png";
+  }
+
+  gameListItem.appendChild(logo);
+
   const title = document.createElement('h2');
   title.textContent = form.title.value;
   gameListItem.appendChild(title);
 
-  const genre = document.createElement('h3');
-  genre.textContent = form.genre.value;
-  gameListItem.appendChild(genre);
-
-  const system = document.createElement('p');
+  const system = document.createElement('h3');
   system.textContent = form.system.value;
   gameListItem.appendChild(system);
+
+  const genre = document.createElement('p');
+  genre.textContent = form.genre.value;
+  gameListItem.appendChild(genre);
 
   return gameListItem;
 }

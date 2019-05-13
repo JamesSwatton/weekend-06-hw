@@ -1,0 +1,25 @@
+* {
+  margin: 0
+}
+
+body {
+  width: 60%;
+  margin: auto;
+}
+
+img {
+  width: 100px;
+}
+
+li {
+  width: 100%;
+  /* background-color: #FCD9C2; */
+  padding-left: 30px;
+  margin-top: 10px;
+  border: 2px solid black;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}​
